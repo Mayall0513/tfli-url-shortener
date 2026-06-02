@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS urls (
+    id INTEGER PRIMARY KEY,
+    url TEXT NOT NULL UNIQUE,
+    shortened_url TEXT UNIQUE,
+    expiry INTEGER
+);
